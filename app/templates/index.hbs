@@ -1,9 +1,9 @@
-<ul>
-  <h3>Questions:</h3>
-  {{#each model.questions as |question|}}
-    {{question-tile question=question deleteQuestion="deleteQuestion"}}
-  {{/each}}
-</ul>
+<div class="question">
+  <h3>Post A Question Here!</h3>
+    {{#each model.questions as |question|}}
+      {{question-tile question=question deleteQuestion="deleteQuestion"}}
+    {{/each}}
+</div>
 
 {{new-question saveQuestion="saveQuestion"}}
 

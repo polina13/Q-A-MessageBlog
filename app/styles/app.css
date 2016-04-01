@@ -1,0 +1,37 @@
+.question {
+  font-style: italic;
+  padding-left: auto;
+}
+
+.phone {
+  text-decoration: underline;
+  color: blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  color: #008040;
+  background-color: #00004d;
+  padding: 35px;
+  margin-top: 1%;
+
+
+
+}
+
+.sub-heading {
+  color: #0099cc;
+}
+
+.sidebar {
+  border-left: 1px solid black;
+  height: auto;
+}
+
+body {
+  background-color: #c2d6d6;
+
+}

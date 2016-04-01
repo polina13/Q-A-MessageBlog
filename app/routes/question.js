@@ -15,8 +15,6 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question', params.question);
     },
-
-    // component for new answer: ember g component new-answer.....
     deleteQuestion(question){
       var deletes = question.get('answers').map(function(answer){
         return answer.destroyRecord();

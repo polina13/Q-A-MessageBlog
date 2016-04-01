@@ -7,9 +7,12 @@
 
 <hr />
 
+{{update-question question=model updateQuestion="updateQuestion"}}
+
+<hr />
+
 {{#each model.answers as |answer|}}
   {{answer.text}} by {{answer.author}}
 {{/each}}
 
-
-{{update-question question=model updateQuestion="updateQuestion"}}
+{{new-answer saveAnswer="saveAnswer"}}
