@@ -16,17 +16,18 @@ export default Ember.Route.extend({
       this.transitionTo('question', params.question);
     },
 
-    deleteQuestion(question) {
-      var deletes = question.get('answers').map(function(answer) {
+    // component for new answer: ember g component new-answer.....
+    deleteQuestion(question){
+      var deletes = question.get('answers').map(function(answer){
         return answer.destroyRecord();
       });
-      Ember.RSVP.all(deletes).then(function() {
+      Ember.RSVP.all(deletes).then(function(){
         return question.destroyRecord();
       });
       this.transitionTo('index');
     },
-    updateQuestion(question, params) {
-      Object.keys(params).forEach(function(key) {
+    updateQuestion(question, params){
+      Object.keys(params).forEach(function(key){
         if(params[key] !== undefined) {
           question.set(key, params[key]);
         }

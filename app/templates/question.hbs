@@ -3,12 +3,13 @@
 {{model.author}}
 {{model.information}}
 
-<button {{action 'deleteQuestion' model}}>Delete</button>
+<button class="btn btn-danger"{{action 'deleteQuestion' model}}>Delete</button>
 
 <hr />
 
 {{#each model.answers as |answer|}}
-  <textarea>{{answer.text}} by {{answer.author}}</textarea>
+  {{answer.text}} by {{answer.author}}
 {{/each}}
 
-{{update-question question=question updateQuestion="updateQuestion"}}
+
+{{update-question question=model updateQuestion="updateQuestion"}}
