@@ -14,6 +14,6 @@ export default Ember.Component.extend({
       };
       this.set('updateQuestion', false);
       this.sendAction('updateQuestion', question, params);
+    }
   }
-}
 });

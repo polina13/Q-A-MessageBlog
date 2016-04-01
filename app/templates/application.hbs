@@ -1,3 +1,23 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<div class = "container">
+  <div class="jumbotron">
+    <h1>Q&A Message Board</h1>
+    <p>Ask here and someone will answer it for you</p>
+  </div>
+  <div class = "row">
+  <div class = "col-sm-8">
 {{outlet}}
+</div>
+
+<div class = "col-sm-4 sidebar">
+{{#link-to 'about'}}<img src = "https://www.elija.org/uploads/Message%20Board(1).jpg" width = "300" height = "360">{{/link-to}}
+
+
+</div>
+</div>
+
+
+<footer>
+
+{{#link-to 'index'}}Home{{/link-to}}
+</footer>
+</div>
