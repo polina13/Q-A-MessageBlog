@@ -6,5 +6,5 @@
 
 {{#each model.answers as |answer|}}
 <textarea>{{answer.text}} by {{answer.author}}</textarea>
-<br />
+  {{new-answer saveAnswer="saveAnswer" question=model}}
 {{/each}}

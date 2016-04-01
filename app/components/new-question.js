@@ -11,13 +11,12 @@ export default Ember.Component.extend({
     },
     saveQuestion() {
       var params = {
-        title: this.get('title')
+        title: this.get('title'),
         author: this.get('author'),
         // date: new Date(),
         information: this.get('information'),
       };
       this.set('addNewQuestion', false);
-
       this.sendAction('saveQuestion', params);
     }
   }

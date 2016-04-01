@@ -1,0 +1,10 @@
+{ "questions": [{
+  "question": "Where is the best place to go for vacation",
+  "author": "Polina",
+  "information": "warm, fun summer full with activities and great food ",
+  }],
+"answers": [{
+  "text": "Bulgaria",
+  "author": "Everyone",
+  }]
+}
