@@ -1,0 +1,12 @@
+<ul>
+  {{#each model.questions as |question| }}
+    {{#link-to 'question' question.id}}<h2>{{question.title}}</h2>{{/link-to}}
+    <h3>Author: {{question.authour}}
+  {{/each}}
+
+  {{#each model.answers as |answer| }}
+    {{answer-tile answer= answer}}
+  {{/each}}
+</ul>
+
+{{new-question saveQuestion = "saveQuestion"}}
