@@ -14,6 +14,7 @@ export default Ember.Component.extend({
         title: this.get('title'),
         author: this.get('author'),
         // date: new Date(),
+
         information: this.get('information'),
       };
       this.set('addNewQuestion', false);
