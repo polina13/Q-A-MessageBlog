@@ -17,8 +17,8 @@ export default Ember.Component.extend({
 
         information: this.get('information'),
       };
-      this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);
+      this.set('addNewQuestion', false);
     }
   }
 });

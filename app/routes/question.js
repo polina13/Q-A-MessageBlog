@@ -9,11 +9,11 @@ export default Ember.Route.extend({
       var newAnswer = this.store.createRecord('answer', params);
       newAnswer.save();
       var question = params.question;
-      question.get('answer').addObject(newAnswer);
+      question.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
         return question.save();
       });
-      this.transitionTo('question', params.question)
+      this.transitionTo('question', params.question);
     },
 
     deleteQuestion(question) {
@@ -22,7 +22,7 @@ export default Ember.Route.extend({
       });
       Ember.RSVP.all(deletes).then(function() {
         return question.destroyRecord();
-      })
+      });
       this.transitionTo('index');
     },
     updateQuestion(question, params) {
