@@ -1,1 +1,10 @@
 <h1>Welcome to the question page</h1>
+
+{{new-answer question=model saveAnswer="saveAnswer"}}
+
+<hr />
+
+{{#each model.answers as |answer|}}
+<textarea>{{answer.text}} by {{answer.author}}</textarea>
+<br />
+{{/each}}
