@@ -1,7 +1,9 @@
-# Qa
+# Q&A Message Board
+### By: Polina Nenchev- 04/01/2016
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
+
+This application is designed to be A Message Board where the users can enter their questions and the public and/or another user will answer the question. It is build using Ember programming language.
 
 ## Prerequisites
 
@@ -39,7 +41,17 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Technologies Used:
+* Atom
+* HTML
+* Ember JS
+* NPM
+* NodeJS
+* GitHub
+* Bower
+* Terminal
+* Bootstrap
+
 
 Specify what it takes to deploy your app.
 
@@ -51,3 +63,7 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+### License
+
+Copyright (c) 2016, Polina Nenchev - This software is licensed under the MIT license
