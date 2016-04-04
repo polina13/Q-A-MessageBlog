@@ -1,18 +1,18 @@
 <h1>Welcome to the question page</h1>
-{{model.title}}
-{{model.author}}
-{{model.information}}
+Question: {{model.title}}?
+<br>
+Written by: {{model.author}}
+<br>
+Additional information: {{model.information}}
 
 <button class="btn btn-danger"{{action 'deleteQuestion' model}}>Delete</button>
 
 <hr />
 
 {{update-question question=model updateQuestion="updateQuestion"}}
-
-<hr />
-
+<hr/>
 {{#each model.answers as |answer|}}
-  {{answer.text}} by {{answer.author}}
+  The question above has been answered by {{answer.author}}. It is <strong>{{answer.text}}</strong>!
 {{/each}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}

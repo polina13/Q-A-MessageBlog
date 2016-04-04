@@ -10,10 +10,12 @@
       {{input value=author id="author"}}
     </div>
     <button class = "btn btn-success" {{action 'saveAnswer'}}>Save</button>
-
+    <br>
     <button class = "btn btn-warning" {{action 'answerFormHide'}}>Hide</button>
+    <br>
   </form>
 </div>
 {{else}}
-<button class = "btn btn-primary"{{action 'answerFormShow'}}>Answer for question:</button>
+<hr/>
+<button class = "btn btn-primary"{{action 'answerFormShow'}}>Answer this question:</button>
 {{/if}}
