@@ -3,14 +3,13 @@
 <h4>Written by: {{model.author}}</h4>
 <h4>Category: {{model.category}}</h4>
 <h5>Additional information: {{model.information}}</h5>
-<p>Date: {{moment-format model.date}}</p>
+<h5>Date: {{moment-format model.date}}</h5>
 <div class="container">
   <button class="btn btn-danger col-sm-6"{{action 'deleteQuestion' model}}>Delete Question</button>
 </div>
 <br>
 
 {{update-question question=model updateQuestion="updateQuestion"}}
-<hr/>
 
 {{#each model.answers as |answer|}}
   <li>The question above has been answered by {{answer.author}} and the answer is <strong>{{answer.text}}</strong>!</li>
