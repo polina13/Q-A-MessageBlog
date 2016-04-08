@@ -1,23 +1,19 @@
-<h1>Welcome to the question page</h1>
-Question: {{model.title}}?
+<h2 class="heading">Ask A Question!</h2>
+<h3>{{model.title}}?</h3>
+<h4>Written by: {{model.author}}</h4>
+<h4>Category: {{model.category}}</h4>
+<h5>Additional information: {{model.information}}</h5>
+<p>Date: {{moment-format model.date}}</p>
+<div class="container">
+  <button class="btn btn-danger col-sm-6"{{action 'deleteQuestion' model}}>Delete Question</button>
+</div>
 <br>
-Written by: {{model.author}}
-<br>
-Additional information: {{model.information}}
-<br>
-Category: {{model.category}}
-<br>
-Date: {{model.date}}
-
-<button class="btn btn-danger"{{action 'deleteQuestion' model}}>Delete</button>
-
-<hr />
 
 {{update-question question=model updateQuestion="updateQuestion"}}
-
 <hr/>
+
 {{#each model.answers as |answer|}}
-  <li>The question above has been answered by {{answer.author}}. It is <strong>{{answer.text}}</strong>!</li>
+  <li>The question above has been answered by {{answer.author}} and the answer is <strong>{{answer.text}}</strong>!</li>
 {{/each}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}

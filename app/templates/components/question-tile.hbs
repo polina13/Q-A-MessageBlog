@@ -2,5 +2,5 @@
 {{#if question.picked}}
   <button class="btn btn-danger" {{action 'remove' question}}>Remove</button>
 {{else}}
-  <button class="btn btn-success" {{action 'addQuestion' question}}>Add to Favorites</button>
+  <button class="btn btn-success btn-favorite" {{action 'addQuestion' question}}>Add to Favorites</button>
 {{/if}}

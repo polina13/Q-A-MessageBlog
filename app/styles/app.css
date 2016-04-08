@@ -22,20 +22,14 @@
 }
 
 .main-heading {
-  font-size: 10px;
-  font-family: fantasy;
-}
-
-.sidebar {
-  border-left: 1px solid black;
-  height: auto;
+  font-size: 8px;
 }
 
 body {
   padding-top: 100px;
   background-image: url("http://www.bipnational.net/Portals/_default/Skins/skintryem/backgrounds/Gray/11_image.jpg");
   background-size: 100% 100%;
-  font-size: 10pt;
+  font-size: 8pt;
 }
 
 .navbar {
@@ -49,4 +43,38 @@ body {
   width: 90%;
   margin-bottom: 50px;
   margin-top: 20px;
+}
+
+.heading {
+  text-decoration: underline;
+  color: #008040;
+}
+
+li {
+ font-size:16px;
+}
+
+.btn {
+ border-radius: 0;
+}
+
+.well {
+  height: 100%;
+}
+
+.btn-new {
+  height: 70px;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.btn-new:hover {
+  background-color: #423490;
+}
+
+.btn-favorite {
+  height: 70px;
+  width:  135px;
+  font-weight: 500;
+  font-size: 1.25em;
 }

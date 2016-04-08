@@ -16,9 +16,11 @@
       <label for="information">Information</label>
       {{input value=information id="information" placeholder=question.information}}
     </div>
-    
+
     <button {{action 'updateQuestion' question}}>Edit Question</button>
   </form>
 {{else}}
-  <button class="btn btn-success" {{action "updateQuestionForm"}}>Edit your question?</button>
+<div class="container">
+  <button class="btn btn-success col-sm-6" {{action "updateQuestionForm"}}>Edit Question?</button>
+</div>
 {{/if}}

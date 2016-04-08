@@ -1,10 +1,11 @@
 <div>
-  <h3>Post A Question Here!</h3>
+  <h2>Post A Question Here!</h2>
     {{#each model.questions as |question|}}
       {{question-tile question=question deleteQuestion="deleteQuestion"}}
     {{/each}}
 </div>
+<br>
 {{new-question saveQuestion="saveQuestion"}}
-<div id="displayQuestion" class="container">
+<div id="displayQuestion" class="well">
   {{display-question}}
 </div>
