@@ -52,9 +52,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * Terminal
 * Bootstrap
 
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
