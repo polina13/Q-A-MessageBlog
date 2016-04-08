@@ -2,11 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Service.extend({
   inquiries: [],
-  fullQuestion: Ember.computed.gte('inquiries.length', 2),
+  fullCart: Ember.computed.gte('inquiries.length', 5),
   add(inquiry) {
-    if(this.get('fullQuestion')) {
-      alert('This is your favorite question? If so add it or remove it?');
-    } else {
+    if(this.get('fullCart')) {
+      alert('The cart is full. Remove an item to add another one.');
+      } else {
       this.get('inquiries').pushObject(inquiry);
     }
   },

@@ -42,3 +42,10 @@ body {
   font-family: fantasy;
   color: #898C8C;
 }
+
+#displayQuestion {
+  height: 200px;
+  width: 90%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}

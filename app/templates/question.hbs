@@ -11,12 +11,6 @@ Additional information: {{model.information}}
 
 {{update-question question=model updateQuestion="updateQuestion"}}
 
-{{#if question.picked}}
-<button class="btn btn-danger" {{action 'remove' question}}>Remove</button>
-{{else}}
-<button class="btn btn-success" {{action 'addQuestion' question}}>Add to Favorites</button>
-{{/if}}
-
 <hr/>
 {{#each model.answers as |answer|}}
   The question above has been answered by {{answer.author}}. It is <strong>{{answer.text}}</strong>!
