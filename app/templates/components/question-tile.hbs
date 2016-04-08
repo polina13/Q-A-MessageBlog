@@ -1,4 +1,4 @@
-{{unanswered-question question}}{{#link-to 'question' question.id}}{{question.title}}?  By: {{question.author}} | {{moment-format question.date}}{{/link-to}}
+{{#link-to 'question' question.id}} <h3>{{unanswered-question question}}{{question.title}}</h3> <h4>{{question.category}}</h4><h5>By: {{question.author}} | {{moment-format question.date}}</h5>{{/link-to}}
 {{#if question.picked}}
   <button class="btn btn-danger" {{action 'remove' question}}>Remove</button>
 {{else}}

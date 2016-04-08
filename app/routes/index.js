@@ -4,7 +4,9 @@ export default Ember.Route.extend({
   favoriteQuestion: Ember.inject.service(),
   model(){
     return Ember.RSVP.hash({
-      questions: this.store.findAll('question'),
+      questions: this.store.query('question', {
+        orderBy: 'category'
+      }),
       answers: this.store.findAll('answer')
     });
   },
