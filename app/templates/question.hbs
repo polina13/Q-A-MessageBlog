@@ -4,6 +4,8 @@ Question: {{model.title}}?
 Written by: {{model.author}}
 <br>
 Additional information: {{model.information}}
+<br>
+Category: {{model.category}}
 
 <button class="btn btn-danger"{{action 'deleteQuestion' model}}>Delete</button>
 
@@ -13,7 +15,7 @@ Additional information: {{model.information}}
 
 <hr/>
 {{#each model.answers as |answer|}}
-  The question above has been answered by {{answer.author}}. It is <strong>{{answer.text}}</strong>!
+  <li>The question above has been answered by {{answer.author}}. It is <strong>{{answer.text}}</strong>!</li>
 {{/each}}
 
 {{new-answer saveAnswer="saveAnswer" question=model}}

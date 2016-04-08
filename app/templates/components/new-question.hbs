@@ -10,12 +10,14 @@
       {{input value=author id="author"}}
     </div>
     <div class="form-group">
+      <label for="category">Category</label>
+      {{input value=category id="category"}}
+    </div>
+    <div class="form-group">
       <label for="information">Information</label>
       {{textarea value=information id="information"}}
     </div>
     <button class = "btn btn-danger" {{action 'saveQuestion'}}>Save</button>
-
-    <!-- <button class = "btn btn-warning" {{action 'questionFormHide'}}>Hide</button> -->
   </form>
 </div>
 {{else}}

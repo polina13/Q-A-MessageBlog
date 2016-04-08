@@ -1,10 +1,12 @@
 { "questions": [{
-  "title": "Where is the best place to go for vacation",
+  "title": "Where is the best place to go for vacation?",
   "author": "Polina",
-  "information": "warm, fun summer full with activities and great food "
-  }],
-"answers": [{
-  "text": "Bulgaria",
-  "author": "Everyone"
+  "category": "Travel",
+  "information": "warm, fun summer full with activities and great food"
+  }, {
+  "title": "What is the most affordable programming school in USA?",
+  "author": "Polina",
+  "category": "School",
+  "information": "affordable, hands-on training, help with finding job"
   }]
 }

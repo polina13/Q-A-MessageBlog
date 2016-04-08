@@ -6,6 +6,7 @@ export default DS.Model.extend({
   author: DS.attr('string'),
   information: DS.attr('string'),
   date: DS.attr('date'),
+  category: DS.attr('string'),
   answers: DS.hasMany('answer', { async: true }),
   favoriteQuestion: Ember.inject.service(),
   picked: Ember.computed('favoriteQuestion.inquiries.[]', function() {
