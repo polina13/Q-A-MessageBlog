@@ -1,0 +1,33 @@
+{
+  "answers" : {
+    "-KErB2rrJrcRbXR7-Yjk" : {
+      "author" : "Polina",
+      "question" : "0",
+      "text" : "Bulgaria"
+    },
+    "-KErB9cUJdU-b9Oet-Ur" : {
+      "author" : "Polina",
+      "question" : "1",
+      "text" : "Epidocus"
+    }
+  },
+  "questions" : [ {
+    "answers" : {
+      "-KErB2rrJrcRbXR7-Yjk" : true
+    },
+    "author" : "Polina",
+    "category" : "Travel",
+    "date": "",
+    "information" : "warm, fun summer full with activities and great food",
+    "title" : "Where is the best place to go for vacation?"
+  }, {
+    "answers" : {
+      "-KErB9cUJdU-b9Oet-Ur" : true
+    },
+    "author" : "Polina",
+    "category" : "School",
+    "date": "",
+    "information" : "affordable, hands-on training, help with finding job",
+    "title" : "What is the most affordable programming school in USA?"
+  } ]
+}

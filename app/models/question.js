@@ -5,7 +5,11 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   author: DS.attr('string'),
   information: DS.attr('string'),
-  date: DS.attr('date'),
+  date: DS.attr('date', {
+  defaultValue() {
+    return new Date();
+  }
+}),
   category: DS.attr('string'),
   answers: DS.hasMany('answer', { async: true }),
   favoriteQuestion: Ember.inject.service(),
