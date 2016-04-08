@@ -1,4 +1,4 @@
-{{#link-to 'question' question.id}}{{question.title}}?  By: {{question.author}} | {{moment-format question.date}}{{/link-to}}
+{{unanswered-question question}}{{#link-to 'question' question.id}}{{question.title}}?  By: {{question.author}} | {{moment-format question.date}}{{/link-to}}
 {{#if question.picked}}
   <button class="btn btn-danger" {{action 'remove' question}}>Remove</button>
 {{else}}
