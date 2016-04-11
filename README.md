@@ -1,9 +1,10 @@
 # Q&A Message Board
-### By: Polina Nenchev- 04/01/2016
+### By: Polina Nenchev- 04/01/2016 (part 1) && 04/08/2016 (part 2)
+
 
 ## Description
 
-This application is designed to be A Message Board where the users can enter their questions and the public and/or another user will answer the question. It is build using Ember programming language.
+This application is designed to be A Message Board where the users can enter their questions and the public and/or another user will answer the question. It is build using Ember programming language, customer helpers, computed property and service called favorite-question.
 
 ## Prerequisites
 
@@ -45,12 +46,16 @@ Make use of the many generators for code, try `ember help generate` for more det
 * Atom
 * HTML
 * Ember JS
+* Helpers
+* Computed property
+* Service
 * NPM
 * NodeJS
 * GitHub
 * Bower
 * Terminal
 * Bootstrap
+
 
 ## Further Reading / Useful Links
 
